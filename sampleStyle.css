@@ -17,13 +17,6 @@ h1{
     margin: 0px;
 }
 
-nav{
-	background-color: darkgoldenrod;  
-    height: 100px;
-    /*margin: 5px 0 5px 0;*/
-    line-height: 100px;
-}
-
 .content{    
     display: flex;  
     height: 350px;  
@@ -61,3 +54,53 @@ footer{
     bottom: 0;
     
 }
+/*      Navigation Bar Styles      */
+nav{
+	background-color: darkgoldenrod;  
+    height: 100px;
+    width: 100%;
+    /*line-height: 100px;*/
+}
+#navDiv{
+    width: 100%;
+    height: 100%;
+    color:black;
+    font-size: medium;
+    display: block;
+    position: absolute;
+    display: block;
+}
+.navbar1{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    display: block;
+}
+ul{
+    list-style: none;
+    padding:0;
+    margin: 0;
+    line-height: 20px;
+}
+ul li{
+    padding: 2px;
+}
+.nav1left{
+    float: left;
+    display: inline-flex;
+}
+.nav1right{
+    display: block;
+    position: absolute;
+    display: inline-flex;
+    float: right;
+    right:0;
+}
+/*.navbar2{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    float: left;
+    left:0;
+}*/
