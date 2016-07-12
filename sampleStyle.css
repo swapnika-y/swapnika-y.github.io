@@ -33,7 +33,7 @@ nav{
 aside{
 	background-color: lightblue;
     width: 30%;
-    margin: 5px;
+    margin: 5px 0 5px 5px;
     line-height: 350px;
 }
 
@@ -47,7 +47,7 @@ section{
 article{
 	background-color: lightgreen;
     height: 40%;
-    margin: 5px 0 5px 5px;
+    margin: 10px;
     border: 1px solid darkgreen; 
     line-height: 120px;
 }
