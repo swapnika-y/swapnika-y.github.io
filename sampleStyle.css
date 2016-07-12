@@ -23,19 +23,20 @@ nav{
 .content{    
     display: flex;  
     height: 350px;  
-    widows: 100%;
+    width: 100%;
 }
 aside{
 	background-color: lightblue;
     width: 30%;
-    margin: 5px;
+    margin: 5px 0 5px 5px;
+    mar
     line-height: 350px;
 }
 section{
 	background-color: yellow;
     width: 70%;
     border: 1px solid red; 
-    margin: 5px;
+    margin: 5px 5px 5px 0px;
 }
 article{
 	background-color: lightgreen;
@@ -46,6 +47,9 @@ article{
 }
 footer{
 	background-color: purple;
-    height: 100px;
-    line-height: 100px;
+    height: 90px;
+    width: 100%;
+    line-height: 90px;
+    position: fixed;
+    bottom: 0;
 }
