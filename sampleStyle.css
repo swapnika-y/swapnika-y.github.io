@@ -67,7 +67,7 @@ nav{
     color:black;
     font-size: medium;
     display: block;
-    position: absolute;
+    position: relative;
     display: block;
 }
 .navbar1{
@@ -91,7 +91,7 @@ ul li{
 }
 .nav1right{
     display: block;
-    position: absolute;
+    position: relative;
     display: inline-flex;
     float: right;
     right:0;
