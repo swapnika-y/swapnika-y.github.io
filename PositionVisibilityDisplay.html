@@ -12,7 +12,7 @@
         By default HTML elements fall in to two categories for the way they render/lay in a document: i.e, Block & Inline<br>
         <ul>
         	<li>Block elements: Block elements take new line and occupy the available width. Eg: div tag, p tag, h1 - h6 tags. These elements by default have their display property set to 'block'.<br></li>
-        	<li>Inline elements: Inline elements continue to be in line other elements as they appear and occupy only required space. Eg: span tag, a tag, button tag. These elements by default have their display property set to 'inline'.<br></li>
+        	<li>Inline elements: Inline elements continue to be in line with other elements as they appear and occupy only required space. Eg: span tag, a tag, button tag. These elements by default have their display property set to 'inline'.<br></li>
         </ul>
     </p>
     <article>
@@ -32,18 +32,12 @@
                 Position property: 'position' property is used to specify the positioning of an element.
                 There are four basic values to define the positioning method to be adopted by the element they are: 'static', 'relative', 'absolute' and 'fixed'.<br>
                	<ul>
-               		<li>position:static - This is the default positioning value set to any element. When set to 'static' the top left bottom and left will have no effect on the positioning of the element. The container of the element will get add up with the element width height. <br></li>
-               		<li>position:relative - When set to 'relative' the top left bottom and left properties of element will take effect with respect to its initial position in parent container, but will not effect the parent container to resize or shuffle itself. The container element's size will get add up with the element's width height.<br></li>
-               		<li>position:absolute - When position of an element is set to 'absolute', size of the container of the element will not get add up with the element width height. The element gets attached to one of its parent container having the position set as 'relative'/'absolute'/'fixed'. if none of its parent have position set to it the it is attached to the body element.<br></li>
-               		<li>position:fixed - When position of an element is set to 'fixed', the element gets attached browser's viewport. Size of the container element will not get add up with the element's width and height. <br></li>
+               		<li>position:static - This is the default positioning value set to any element. When set to 'static' the top left bottom and left will have no effect on the positioning of the element. The element will occupy the space of its width x height in its container. <br></li>
+               		<li>position:relative - When set to 'relative' the top left bottom and left properties of element will take effect with respect to its initial position in parent container, but will not effect the parent container element to resize or shuffle itself. It will continue to occupy its space in parent container.<br></li>
+               		<li>position:absolute - When position of an element is set to 'absolute', elementwill not occupy any space it its container. The element gets attached to one of its parent container having the position set as 'relative'/'absolute'/'fixed'. if none of its parent have position set to it the it is attached to the body element.<br></li>
+               		<li>position:fixed - When position of an element is set to 'fixed', the element gets attached browser's viewport. Will not occupy any space its container. <br></li>
                	</ul>
                 </p>
         </article>
-
-
-
-
 </body>
-
-
 </html>
