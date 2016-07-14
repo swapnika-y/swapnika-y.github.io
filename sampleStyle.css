@@ -18,24 +18,25 @@ h1{
 }
 
 .content{    
-    height: 350px;  
+    height: 335px;  
     width: 100%;
-}
-aside{
-	background-color: lightblue;
-    width: 30%;
-    margin: 5px 0 5px 5px;
-    line-height: 350px;
-	/*float:right;
-	display: block;*/
-	float:left;
 }
 
 section{
 	background-color: yellow;
     width: 70%;
+    height: 100%;
     border: 1px solid red; 
     margin: 5px 5px 5px 0;
+	float:left;
+}
+aside{
+	background-color: lightblue;
+    width: auto;
+    margin: 5px 0 5px 5px;
+    line-height: 335px;
+	/*float:right;
+	display: block;*/
 	float:left;
 }
 
@@ -92,12 +93,12 @@ ul li{
 }
 .nav1left{
     float: left;
-    display: inline-flex;
+    display: inline;
 }
 .nav1right{
     display: block;
     position: relative;
-    display: inline-flex;
+    display: inline;
     float: right;
     right:0;
 }
