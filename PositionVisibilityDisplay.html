@@ -1,43 +1,84 @@
-
 <!doctype HTML>
 
 <html>
-<head><title>CSS position visibility display </title></head>
-    
 
-<body style="background-color:lightgrey;word-wrap:normal;" >
-   
-   <header><h2>Element Positioning, its Display and Visibility</h2></header>
-    <p> 
-        By default HTML elements fall in to two categories for the way they render/lay in a document: i.e, Block & Inline<br>
-        <ul>
-        	<li>Block elements: Block elements take new line and occupy the available width. Eg: div tag, p tag, h1 - h6 tags. These elements by default have their display property set to 'block'.<br></li>
-        	<li>Inline elements: Inline elements continue to be in line with other elements as they appear and occupy only required space. Eg: span tag, a tag, button tag. These elements by default have their display property set to 'inline'.<br></li>
-        </ul>
-    </p>
-    <article>
-       <header>
-           <h3>Display and Visibility</h3></header>
-           <p> 
-			   <ul>
-				   <li>display:none - When the display property is set 'none' the element is not visible and it will no more take any space in its parent container.</li>
-				   <li>visibility:hidden - When the visibility property is set 'hidden' the element is not visible but it will still continue to occupy space in the  parent container.</li>
-			   </ul>
-            </p>
-       </article>
-       <article>
-           <header>
-              <h3>Position property</h3></header>
-               <p>
-                Position property: 'position' property is used to specify the positioning of an element.
-                There are four basic values to define the positioning method to be adopted by the element they are: 'static', 'relative', 'absolute' and 'fixed'.<br>
-               	<ul>
-               		<li>position:static - This is the default positioning value set to any element. When set to 'static' the top left bottom and left will have no effect on the positioning of the element. The element will occupy the space of its width x height in its container. <br></li>
-               		<li>position:relative - When set to 'relative' the top left bottom and left properties of element will take effect with respect to its initial position in parent container, but will not effect the parent container element to resize or shuffle itself. It will continue to occupy its space in parent container.<br></li>
-               		<li>position:absolute - When position of an element is set to 'absolute', elementwill not occupy any space it its container. The element gets attached to one of its parent container having the position set as 'relative'/'absolute'/'fixed'. if none of its parent have position set to it the it is attached to the body element.<br></li>
-               		<li>position:fixed - When position of an element is set to 'fixed', the element gets attached browser's viewport. Will not occupy any space its container. <br></li>
-               	</ul>
-                </p>
-        </article>
+<head>
+	<title>CSS position visibility display </title>
+</head>
+
+
+<body style="background-color:lightgrey;word-wrap:normal;">
+
+	<header>
+		<h2>Element Positioning, its Display and Visibility</h2></header>
+	<p>
+		By default HTML elements fall in to two categories for the way they render/lay in a document: i.e, Block & Inline
+		<br>
+		<ul>
+			<li>Block elements: Block elements take new line and occupy the available width. Eg: div tag, p tag, h1 - h6 tags. These elements by default have their display property set to 'block'.
+				<br>
+			</li>
+			<li>Inline elements: Inline elements continue to be in line with other elements as they appear and occupy only required space. Eg: span tag, a tag, button tag. These elements by default have their display property set to 'inline'.
+				<br>
+			</li>
+		</ul>
+	</p>
+	<article>
+		<header>
+			<h3>Display and Visibility</h3></header>
+		<p>
+			<ul>
+				<li>display:none - When the display property is set 'none' the element is not visible and it will no more be part of its parent container.</li>
+				<li>visibility:hidden - When the visibility property is set 'hidden' the element is not visible but it will still continue to occupy space in the parent container.</li>
+			</ul>
+		</p>
+	</article>
+	<article>
+		<header>
+			<h3>Position property</h3></header>
+		<p>
+			Position property: 'position' property is used to specify the positioning of an element. There are four basic values to define the positioning method to be adopted by the element they are: 'static', 'relative', 'absolute' and 'fixed'.
+			<br>
+			<ul>
+				<li>
+					<p>position:static - This is the default positioning value set to any element. When set to 'static' the top left bottom and right will have no effect on the positioning of the element. The element will occupy the space of its width x height in its container. The element will be positioned at its default position depending on its type(Block or Inline)</p>
+					<div>
+						<p data-height="436" data-theme-id="24628" data-slug-hash="oLoQPr" data-default-tab="css,result" data-user="raajkumar-s" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/raajkumar-s/pen/oLoQPr/">oLoQPr</a> by Rajkumar (<a href="http://codepen.io/raajkumar-s">@raajkumar-s</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+						<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+					</div>
+				</li>
+				<li>
+					<p>position:relative - When set to 'relative' the top left bottom and right properties of element will take effect with respect to its normal position of element in parent container, but will not effect the parent container element to resize or shuffle itself. It will continue to occupy its space in parent container.</p>
+					<div>
+						<p data-height="475" data-theme-id="24628" data-slug-hash="KryAJg" data-default-tab="css,result" data-user="raajkumar-s" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/raajkumar-s/pen/KryAJg/">Position:relative</a> by Rajkumar (<a href="http://codepen.io/raajkumar-s">@raajkumar-s</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+						<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+					</div>
+				</li>
+				<li>
+					<p>position:absolute - When position of an element is set to 'absolute', element will not occupy any space it its container and it will be moved out of the container's layout. The element gets attached to one of its positioned ancestor container(having the position set as 'relative'/'absolute'/'fixed').</p>
+					<div>
+						<p data-height="440" data-theme-id="24628" data-slug-hash="zBPrVR" data-default-tab="css,result" data-user="raajkumar-s" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/raajkumar-s/pen/zBPrVR/">Position:absolute</a> by Rajkumar (<a href="http://codepen.io/raajkumar-s">@raajkumar-s</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+						<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+					</div>
+
+
+					<p>if none of its parent have position set to it the it is attached to the body element.</p>
+					<div>
+						<p data-height="425" data-theme-id="24628" data-slug-hash="VjAqLR" data-default-tab="css,result" data-user="raajkumar-s" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/raajkumar-s/pen/VjAqLR/">Position:absolute2</a> by Rajkumar (<a href="http://codepen.io/raajkumar-s">@raajkumar-s</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+						<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+					</div>
+					<br>
+				</li>
+				<li>
+					<p>position:fixed - When position of an element is set to 'fixed', the element gets attached browser's viewport. Will not occupy any space its container.</p>
+					<div>
+						<p data-height="407" data-theme-id="24628" data-slug-hash="JKOwYm" data-default-tab="css,result" data-user="raajkumar-s" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/raajkumar-s/pen/JKOwYm/">Position:fixed</a> by Rajkumar (<a href="http://codepen.io/raajkumar-s">@raajkumar-s</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+						<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+					</div>
+				</li>
+			</ul>
+		</p>
+	</article>
 </body>
+
 </html>
