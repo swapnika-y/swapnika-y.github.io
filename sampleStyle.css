@@ -3,7 +3,7 @@ body{
     color: white;
     text-align: center;
     font-weight: bold;
-    font-size: x-large;
+    font-size: 20px;
 }
 
 header{
@@ -18,23 +18,21 @@ h1{
 }
 
 .content{
-    width: 100%;
-	margin: 5px;
+    margin: 5px;
 }
 
 section{
-	background-color: yellow;
+	background-color: teal;
     width: 70%;
     height: 100%;
     border: 1px solid red; 
 	float:left;
+    box-sizing: border-box;
 }
 aside{
 	background-color: lightblue;
     width: 30%;
     line-height: 335px;
-	/*float:right;
-	display: block;*/
 	float:left;
 }
 
@@ -82,9 +80,9 @@ ul{
 ul li{
     padding: 2px;
 }
-/*.clearclass{
+.clearclass{
 	clear: both;
-}*/
+}
 .nav1left{
     float: left;
     display: inline;
