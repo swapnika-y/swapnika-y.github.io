@@ -17,9 +17,9 @@ h1{
     margin: 0px;
 }
 
-.content{    
-    height: 335px;  
+.content{
     width: 100%;
+	margin: 5px;
 }
 
 section{
@@ -27,13 +27,11 @@ section{
     width: 70%;
     height: 100%;
     border: 1px solid red; 
-    margin: 5px 5px 5px 0;
 	float:left;
 }
 aside{
 	background-color: lightblue;
-    width: auto;
-    margin: 5px 0 5px 5px;
+    width: 30%;
     line-height: 335px;
 	/*float:right;
 	display: block;*/
@@ -51,11 +49,7 @@ article{
 footer{
 	background-color: purple;
     height: 90px;
-    width: 100%;
-    line-height: 90px;
-    position: fixed;
-    bottom: 0;
-    
+    line-height: 90px;    
 }
 /*      Navigation Bar Styles      */
 nav{
@@ -88,9 +82,9 @@ ul{
 ul li{
     padding: 2px;
 }
-.clearclass{
+/*.clearclass{
 	clear: both;
-}
+}*/
 .nav1left{
     float: left;
     display: inline;
