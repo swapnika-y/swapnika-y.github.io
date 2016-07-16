@@ -1,0 +1,88 @@
+html body{
+	margin: 0;
+	background: #f5f5f5;
+	color: #898989;
+}
+.pageHeader{
+	
+	background-color: white;
+	height:100px;
+}
+h1{ 
+	background-color: white;
+	line-height: 100px;
+}
+.bodyWidth{
+	max-width: 1260px;
+	min-width: 755px;
+    margin: 0 auto;
+    /*overflow: hidden;*/
+}
+.mainDiv{
+}
+.mainDiv *{
+	border: 1px solid grey;
+}
+.mainAside{
+	width: 28%;
+	float: left;
+}
+.asideBx{
+	min-width: 340px;
+	min-height: 170px;
+	background-color: lightgrey;
+	padding: 20px;
+}
+section{
+	width: 70%;
+	float: left;
+}
+.clearClass{
+	clear: both;
+}
+.registerDiv{
+	text-align: right;
+}
+.floatLeftClass{
+	float: left;
+}
+.articlesHeader{
+	margin: 0 0 10px 0;
+	position: relative;
+	text-transform: uppercase;
+}
+.categoryHeader{
+	margin: 0 0 10px 0;
+	position: relative;
+	text-transform: uppercase;
+}
+.lineDiv{
+	width: 50%;
+}
+nav{
+	width: 100%;
+	height: 80px;
+	text-transform: uppercase;
+}
+.mainNavBar{
+	background-color: #98b880;
+	height: 50%;
+}
+.subNavBar{
+	background-color:white;
+	height: 50%;
+}
+.mainNav{
+	line-height: 40px;
+	color: white;
+}
+.subNav{
+	text-transform: capitalize;
+	line-height: 40px;
+}
+.mainVav a{
+	margin: 2px;
+}
+.subNav a{
+	margin: 2px;
+}

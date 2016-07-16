@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<style>
+	html, body {
+		padding: 20px;
+	}
+	
+.greatParent{
+  border: 10px solid red;
+}
+.grandParent{
+  border: 10px solid yellow;
+}
+.parent{
+  border: 10px solid green;
+}
+.child{
+  background-color:grey;
+  width:100px;
+  height:100px;
+}
+.two{
+  border: 3px solid blue;
+  background-color:black;
+  position:absolute;
+  left:0px;
+  top:0px;
+}
+</style>
+
+<div class="greatParent">
+    <div class="grandParent">
+        <div class="parent">
+            <div class="child one"></div>
+            <div class="child two"></div>
+            <div class="child three"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
