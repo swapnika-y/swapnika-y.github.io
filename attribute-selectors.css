@@ -1,0 +1,52 @@
+/* All DIVs having attribute "class" */
+div[class] {
+	background: darkgrey;
+	text-align: center;
+}
+
+/* All DIVs having attribute class's value "container" */
+div[class="container"] {
+	background: lightgrey;
+}
+
+/* class's value starts with "child" */
+div[class^="child"] {
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+	line-height: 100px;
+}
+
+/* class's value ends with "child" */
+div[class$="4"]{ 	/* Doesn't work, because class="child4 red-border" doesn't end with 4. Instead it ends with "border" */
+	background: black;
+	color: white;
+}
+/* Fix */
+div[class$="border"]{
+	background: black;
+	color: white;
+}
+
+/* class's value which contains "even" */
+div[class*="odd" i]{
+	background: white;
+}
+
+/* Adding an i (or I) before the closing bracket causes the value to be compared case-insensitively (for characters within the ASCII range). */
+div[name="CHILD2" i]{
+	border: 2px solid blue;
+}
+
+/* Represents an element with an attribute name of attr whose value is a whitespace-separated list of words, one of which is exactly "value". */
+div[class~="red-border"]{
+	border: 2px solid red;
+}
+
+/* Represents an element with an attribute name of attr. Its value can be exactly “value” or can begin with “value” immediately followed by “-” (U+002D). It can be used for language subcode matches. */
+div[lang|="en"]{
+	color: lightgreen;
+}
+div[lang|="pt"]{
+	color: lightcoral;
+}

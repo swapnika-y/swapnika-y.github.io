@@ -1,0 +1,47 @@
+/*
++ Adjacent sibling selectors
+~ General sibling selectors
+> Child selectors
+<space> Descendant selectors
+*/
+h2{
+	color: bisque;
+	
+}
+
+div[class^="container"] {
+	border: 1px solid cornsilk;
+	margin: 20px;
+	padding: 20px;
+}
+
+/* Child selectors - Selects only the immediate child items and not the descendants */
+div[class~="container1"] > p {
+	font-size: 30px;
+	color: brown;
+	text-decoration: line-through;	
+}
+
+/* Descendant selectors - Selects all the descendants */
+div[class~="container2"] p {
+	text-transform: uppercase;
+}
+
+.container3 section {
+	margin: 0 20px;
+}
+.container3 div + p {
+	color: aquamarine;
+}
+
+.container4 section {
+	margin: 0 20px;
+}
+.container4 div ~ p {
+	color: lightsteelblue;
+	text-decoration: underline;
+}
+/*
+* + * {
+	border: 1px solid blue;
+}*/

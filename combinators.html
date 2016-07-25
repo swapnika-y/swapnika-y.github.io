@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Combinators</title>
+	<link rel="stylesheet" href="combinators.css">
+</head>
+<body style="word-wrap: normal; color: #9a8297; background-color: black;">
+	<h2>Child selectors</h2>
+	<div class="container1">
+		<p class="child">Outer 1
+			<h3>
+				<p>inner 1</p>
+			</h3>
+		</p>
+		<p class="child">Outer 2
+			<h3>
+				<p>inner 2</p>
+			</h3>
+		</p>
+		<p class="child">Outer 3
+			<h3>
+				<p>inner 3</p>
+			</h3>
+		</p>
+	</div>
+	
+	<h2>Descendant selectors with space viz div p</h2>
+	<div class="container2">
+		<p class="child">Outer 1
+			<h3>
+				<p>inner 1</p>
+			</h3>
+		</p>
+		<p class="child">Outer 2
+			<h3>
+				<p>inner 2</p>
+			</h3>
+		</p>
+		<p class="child">Outer 3
+			<h3>
+				<p>inner 3</p>
+			</h3>
+		</p>
+		<p class="child">Outer 4
+			<h3>
+				<p>inner 4</p>
+			</h3>
+		</p>
+		<p class="child">Outer 5
+			<h3>
+				<p>inner 5</p>
+			</h3>
+		</p>
+	</div>
+	
+	<h2>Adjacent/Immediate Sibling selectors. Using "div + p" as selector</h2>
+	<div class="container3">
+		<div>Div</div>
+		<article>Article</article>
+		<p>Paragraph 1</p>
+		<p>Paragraph 2</p>
+		<p>Paragraph 3</p>
+		<section>Section
+			<p>Inner Paragraph 1</p>
+			<p>Inner Paragraph 2</p>
+			<p>Inner Paragraph 3</p>
+			<div>Div</div>
+			<p>Inner Paragraph 1</p>
+			<p>Inner Paragraph 2</p>
+			<p>Inner Paragraph 3</p>
+		</section>
+		<p>Paragraph 1</p>
+		<p>Paragraph 2</p>
+		<p>Paragraph 3</p>
+	</div>
+	
+	<h2>General Sibling selectors Using "div ~ p" as selector</h2>
+	<div class="container4">
+		<div>Div</div>
+		<p>Paragraph 1 </p>
+		<p>Paragraph 2</p>
+		<p>Paragraph 3</p>
+		<section>Section
+			<p>Inner Paragraph 1</p>
+			<p>Inner Paragraph 2</p>
+			<p>Inner Paragraph 3</p>
+			<div>Div</div>
+			<p>Inner Paragraph 1</p>
+			<p>Inner Paragraph 2</p>
+			<p>Inner Paragraph 3</p>
+		</section>
+		<p>Paragraph 1</p>
+		<p>Paragraph 2</p>
+		<p>Paragraph 3</p>
+	</div>
+</body>
+</html>
