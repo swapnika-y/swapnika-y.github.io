@@ -32,14 +32,14 @@ html body{
 }
 .pageHeader a {
 	text-decoration: none;
-	color: black;
+	color: bisque;
 	cursor: pointer;
 }
 .bodyWidth{
 	max-width: 1260px;
 	min-width: 755px;
     margin: 0 auto;
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
 .header-box::before, .header-box::after {
 	display: table;
@@ -79,6 +79,7 @@ section{
 	position: relative;
 	text-transform: uppercase;
 }
+article-click-link
 .categoryHeader{
 	margin: 0 0 10px 0;
 	position: relative;
@@ -130,12 +131,6 @@ nav{
 .subNav a{
 	margin: 2px;
 }
-.content{
-	width: 284px;
-	float: left;
-	margin: 0px 20px 20px 0px;
-	background-color: beige;
-}
 h4{
 	color: #98b880;
 }
@@ -145,9 +140,63 @@ h4 span{
 .article-desc{
 	padding: 10px;
 }
-
+.article-click-link{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+.content{
+	position: relative;
+	width: 270px;
+	float: left;
+	margin: 0px 20px 20px 0px;
+	background-color: beige;
+	box-shadow: 3px 3px 5px lightgrey;
+	/*
+	display: inline-block;
+	height: 513px;
+	-moz-column-break-inside: avoid;
+	*/
+	-webkit-column-break-inside: avoid;
+	column-break-inside: avoid;
+}
+.contentsDiv {
+	/*
+	height: 1220px;
+	-webkit-column-gap: 10px;
+	-webkit-column-fill: auto;
+	-moz-column-count: 3;
+	-moz-column-gap: 10px;
+	-moz-column-fill: auto;
+	column-gap: 15px;
+	column-fill: auto;
+	*/
+	-webkit-column-fill: auto;
+	-webkit-column-count: 3;
+	column-count: 3;
+	column-fill: auto;
+}
 .contentsDiv::before, .contentsDiv::after {
 	display: table;
 	content: " ";
 	clear: both;
+}
+.content > .imgs{
+	width:270px;
+}
+.page-footer{
+	height: 150px;
+	background-color: white;
+    padding: 20px;
+}
+.share-search{
+	/*line-height: 100px;
+	margin: 0 10px;*/
+}
+.share-search a{
+    text-decoration: none;
+    cursor: pointer;
+	color: #898989;
 }
