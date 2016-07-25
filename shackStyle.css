@@ -79,7 +79,7 @@ section{
 	position: relative;
 	text-transform: uppercase;
 }
-article-click-link
+
 .categoryHeader{
 	margin: 0 0 10px 0;
 	position: relative;
@@ -186,11 +186,6 @@ h4 span{
 .content > .imgs{
 	width:270px;
 }
-.page-footer{
-	height: 150px;
-	background-color: white;
-    padding: 20px;
-}
 .share-search{
 	/*line-height: 100px;
 	margin: 0 10px;*/
@@ -199,4 +194,13 @@ h4 span{
     text-decoration: none;
     cursor: pointer;
 	color: #898989;
+}
+.page-footer{
+	height: 150px;
+	background-color: white;
+    padding: 20px;
+}
+.patnerships-block{
+	position: absolute;
+	right: 0;
 }
