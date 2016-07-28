@@ -1,15 +1,15 @@
 {
-	articles: [
+	"articles": [
 		{
-			display:true,
-			title:"Display and Visibility",
-			articleImageAlt:"Display & Visibility",
-			category:"CSS",
-			author:"Swapnika",
-			date:""
-			description:"Block and inline elements. To observe the difference when applying visibility and display property",
-			articleImageUrl:"resources/images/articleThumbnails/DisplayAndVisibility.png",
-			articleUrl:"./ariticles/DisplayAndVisibility.html",
+			"display":true,
+			"title":"Display and Visibility",
+			"articleImageAlt":"Display & Visibility",
+			"category":"CSS",
+			"author":"Swapnika",
+			"date":"",
+			"description":"Block and inline elements. To observe the difference when applying visibility and display property",
+			"articleImageUrl":"resources/images/articleThumbnails/DisplayAndVisibility.png",
+			"articleUrl":"./ariticles/DisplayAndVisibility.html"
 		}
-]
+    ]
 }
