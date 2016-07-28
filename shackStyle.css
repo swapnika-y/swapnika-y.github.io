@@ -200,7 +200,6 @@ h4 span{
 	background-color: white;
     padding: 20px;
 }
-.patnerships-block{
-	position: absolute;
-	right: 0;
+.page-footer > div{
+	text-align: center;
 }

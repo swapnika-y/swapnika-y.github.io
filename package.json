@@ -1,0 +1,29 @@
+{
+  "name": "learningadobeblog",
+  "version": "1.0.0",
+  "description": "This is my strory of learning!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swapnika-y/swapnika-y.github.io.git"
+  },
+  "keywords": [
+    "web",
+    "html",
+    "css",
+    "javasript",
+    "oojs"
+  ],
+  "author": "swapnika",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/swapnika-y/swapnika-y.github.io/issues"
+  },
+  "homepage": "https://github.com/swapnika-y/swapnika-y.github.io/issues#readme",
+  "dependencies": {
+    "angular": "^1.5.5"
+  }
+}
