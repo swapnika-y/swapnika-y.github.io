@@ -68,8 +68,9 @@
 							<h3 id="categorySelectionTitle" class="category-selection-title">
 								<span>Category</span>
 							</h3>
-							<select id="categorySelector" data-ng-controller="CategoryController" style="width:255px">
-								<option value="0" label="Select Category"></option>
+							<select id="categorySelector" data-ng-controller="CategoryController" style="width:255px"
+							ng-model="category-selected" ng-change="onCategoryChange(category-selected)">
+								<!--<option value="0" label="Select Category"></option>-->
 								<option data-ng-repeat="category in categories" value="{{::category}}">
 									{{::category}}
 								</option>
