@@ -10,6 +10,46 @@
 			"description":"Block and inline elements. To observe the difference when applying visibility and display property",
 			"articleImageUrl":"resources/images/articleThumbnails/DisplayAndVisibility.png",
 			"articleUrl":"./ariticles/DisplayAndVisibility.html"
+		},{
+			"display":true,
+			"title":"Position Property",
+			"articleImageAlt":"Position Property",
+			"category":"CSS",
+			"author":"Swapnika",
+			"date":"",
+			"description":"Position property: 'position' property is used to specify the positioning of an element. There are four basic values to define the positioning method to be adopted by the element they are: 'static', 'relative', 'absolute' and 'fixed'",
+			"articleImageUrl":"resources/images/articleThumbnails/PositionProperty.png",
+			"articleUrl":"./ariticles/PositionArticle.html"
+		},{
+			"display":true,
+			"title":"Block & Inline Elements",
+			"articleImageAlt":"Block & Inline Elements",
+			"category":"HTML",
+			"author":"Swapnika",
+			"date":"",
+			"description":"By default HTML elements fall in to two categories for the way they render/lay in a document: i.e, Block & Inline.",
+			"articleImageUrl":"resources/images/articleThumbnails/inspiration-368x246",
+			"articleUrl":"./ariticles/PositionArticle.html"
+		},{
+			"display":true,
+			"title":"Block & Inline Elements",
+			"articleImageAlt":"Block & Inline Elements",
+			"category":"JS",
+			"author":"Swapnika",
+			"date":"",
+			"description":"By default HTML elements fall in to two categories for the way they render/lay in a document: i.e, Block & Inline.",
+			"articleImageUrl":"resources/images/articleThumbnails/PositionProperty.png",
+			"articleUrl":"./ariticles/PositionArticle.html"
+		},{
+			"display":true,
+			"title":"Block & Inline Elements",
+			"articleImageAlt":"Block & Inline Elements",
+			"category":"JS",
+			"author":"Swapnika",
+			"date":"",
+			"description":"By default HTML elements fall in to two categories for the way they render/lay in a document: i.e, Block & Inline.",
+			"articleImageUrl":"resources/images/articleThumbnails/PositionProperty.png",
+			"articleUrl":"./ariticles/PositionArticle.html"
 		}
     ]
 }

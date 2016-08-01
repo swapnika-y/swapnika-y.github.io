@@ -1,50 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>CSS Selectors</title>
 	<link type="text/css" rel="stylesheet" href="./articleStyle.css"></link>
-	</head>
+</head>
+
 <body style="word-wrap: normal; background-color: lightgrey; width:100%">
-<div class="container-center-align">
-	<header>
-		<h3>CSS Selectors</h3>
-	</header>
-<p>
-	CSS selectors can be classified into following categories. Basic Selectors, Attribute Selectors, Combinator Selectors, Pseudo classes and Pseudo elements
-</p>
+	<div class="container-center-align">
+		<header>
+			<h3>CSS Selectors</h3>
+		</header>
+		<p>
+			CSS selectors can be classified into following categories. Basic Selectors, Attribute Selectors, Combinator Selectors, Pseudo classes and Pseudo elements
+		</p>
 
-<p><h4>Basic Selectors:</h4> Basic selectors are <ul>
-	<li>Id selectors: '#id-name' '#' char is used before name of the selector to indiacate it is a Id selector and then the nale of the Id is specified.</li>
-	<li>class selecors: '.class-Name' '.' char is used before name of the selector to indiacate it is a Id selector and then the nale of the Id is specified.</li>
-	<li>Type selector: give the type of the element such as div/p/h4 etc to select the elements and one can start with assigning CSS properties.</li>
-	<li>universal selector: the wild card used here to select all the elements is '*'.</li>
-</ul></p>
-<p><h4>Attribute Selectors:</h4> Attribute selectors are used to select the elements based on the attribute property and also based on its values( monkeynewkey key keys keying monkey)
-under attribute selectors following are options.
-<p>For example if DOM has few div elements which we want select having attribute 'class' and having multiple values(like newkey key keys keying and monkey) with space separated.</p>
-<ul>
-	<li>[class*="key"] is used to select all the div elements with attribute 'class' having 'key' among or as a part on any of the values(newkey key keys keying)</li>
-	<li>[class^="key"] is used to select all the div elements with attribute 'class' having 'key' in the begining of one of the values(key keys keying)</li>
-	<li>[class$="key"] is used to select all the div elements with attribute 'class' having 'key' in the ending of one of the values(key monkey)</li>
-	<li>[class~="key"] is used to select all the div elements with attribute 'class' having 'key' as exactly one of the values(key)</li>
-</ul>
+		<p>
+			<h4>Basic Selectors:</h4> Basic selectors are
+			<ul>
+				<li>Id selectors: '#id-name' '#' char is used before name of the selector to indiacate it is a Id selector and then the nale of the Id is specified.</li>
+				<li>class selecors: '.class-Name' '.' char is used before name of the selector to indiacate it is a Id selector and then the nale of the Id is specified.</li>
+				<li>Type selector: give the type of the element such as div/p/h4 etc to select the elements and one can start with assigning CSS properties.</li>
+				<li>universal selector: the wild card used here to select all the elements is '*'.</li>
+			</ul>
+		</p>
+		<p>
+			<h4>Attribute Selectors:</h4> Attribute selectors are used to select the elements based on the attribute property and also based on its values( monkeynewkey key keys keying monkey) under attribute selectors following are options.
+			<p>For example if DOM has few div elements which we want select having attribute 'class' and having multiple values(like newkey key keys keying and monkey) with space separated.</p>
+			<ul>
+				<li>[class*="key"] is used to select all the div elements with attribute 'class' having 'key' among or as a part on any of the values(newkey key keys keying)</li>
+				<li>[class^="key"] is used to select all the div elements with attribute 'class' having 'key' in the begining of one of the values(key keys keying)</li>
+				<li>[class$="key"] is used to select all the div elements with attribute 'class' having 'key' in the ending of one of the values(key monkey)</li>
+				<li>[class~="key"] is used to select all the div elements with attribute 'class' having 'key' as exactly one of the values(key)</li>
+			</ul>
 
-</p>
-<p><h4>Combinator Selectors</h4>
-Combinators have following operators to select the elements which are child/decendents or adjacent to a particular element.
-<ul>
-	<li><h3>Decendent Selector:</h3></li>
-	<li><h3>Child Selector</h3></li>
-	<li><h3>Adjacent Child Selector</h3></li>
-	<li><h3>General Child Selector</h3></li>
-</ul>
-<p data-height="978" data-theme-id="24628" data-slug-hash="GqQZJr" data-default-tab="html,result" data-user="raajkumar-s" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/raajkumar-s/pen/GqQZJr/">Combinator Selectors</a> by Rajkumar (<a href="http://codepen.io/raajkumar-s">@raajkumar-s</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
-</p>
-<p><h4>Pseudo classes</h4></p>
-<p><h4>Pseudo elements</h4></p>
+			<p data-height="633" data-theme-id="24628" data-slug-hash="dXZkAv" data-default-tab="html,result" data-user="raajkumar-s" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/raajkumar-s/pen/dXZkAv/">AttributeSelectors</a> by Rajkumar (<a href="http://codepen.io/raajkumar-s">@raajkumar-s</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+			<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+		</p>
+		<p>
+			<h4>Combinator Selectors</h4> Combinators have following operators to select the elements which are child/decendents or adjacent to a particular element.
+			<ul>
+				<li>
+					<h4>Decendent Selector (space)</h4></li>
+				<li>
+					<h4>Child Selector(>)</h4></li>
+				<li>
+					<h4>Adjacent sibling Selector(+)</h4></li>
+				<li>
+					<h4>General sibling Selector(~)</h4></li>
+			</ul>
+			<p data-height="978" data-theme-id="24628" data-slug-hash="GqQZJr" data-default-tab="html,result" data-user="raajkumar-s" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/raajkumar-s/pen/GqQZJr/">Combinator Selectors</a> by Rajkumar (<a href="http://codepen.io/raajkumar-s">@raajkumar-s</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+			<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+		</p>
+		<p>
+			<h4>CSS Pseudo Elements</h4> CSS Pseudo Elements can be used to style the specific parts of an element such as:
+			<ul>
+				<li>::first-letter - to style first letter of text</li>
+				<li>::first-line - to style first line of text</li>
+				<li>::before - to style and to insert some content before the actual content of an element</li>
+				<li>::after - to style and to insert some content after the actual content of an element and </li>
+				<li>::selection - to style the user selected text</li>
+			</ul> These cannot be expressed as html. Double colon is used as a notation for pseudo elements from CSS3(To distinguish with Pseudo Classes). Single colon was used for both pseudo-classes and pseudo-elements in CSS2 and CSS1. For backward compatibility reasons Single colon is supported for Pseudo Elements in CSS3.
 
-</div>	
+			<p data-height="271" data-theme-id="24628" data-slug-hash="BzAAjJ" data-default-tab="html,result" data-user="raajkumar-s" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/raajkumar-s/pen/BzAAjJ/">Pseudo Classes</a> by Rajkumar (<a href="http://codepen.io/raajkumar-s">@raajkumar-s</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+			<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+		</p>
+		<p>
+			<h4>CSS Pseudo Classes</h4>
+			There are numerous pseudo classes available which allow us to style the elements which have a particular state like in focus, hovered, link visited, link active
+			<ul>
+				<li><h4>:nth-child()</h4></li>
+				<li><h4>:not() 		</h4></li>
+				<li><h4>:link 		</h4></li>
+				<li><h4>:visited 	</h4></li>
+				<li><h4>:hover 		</h4></li>
+				<li><h4>:active 	</h4></li>
+				<li><h4> </h4></li>
+				<li><h4> </h4></li>
+				<li><h4> </h4></li>
+				<li><h4> </h4></li>
+			</ul>
+			
+
+		</p>
+
+	</div>
 </body>
+
 </html>
