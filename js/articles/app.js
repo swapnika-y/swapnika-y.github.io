@@ -1,13 +1,20 @@
 var myApp = angular.module("myApp", []);
 
-myApp.service('articleService', function () {
+myApp.service('articleService', function ($http) {
 	this.articles = [];
+	$http.get('./resources/data/articles.data.json').
+	success(function (data) {
+		this.articles = = data.articles;
+	}).
+	error(function (error) {
+		console.log("Error reading articles.json: " + error);
+	});
 	this.getArticles = function () {
 		return this.articles;
 	};
-	this.setArticles = function (articlesList) {
+	/*this.setArticles = function (articlesList) {
 		this.articles = articlesList;
-	};
+	};*/
 	this.addNewArticles = function (newArticlesList) {
 		this.articles = this.articles.concat(newArticlesList);
 	};
@@ -22,10 +29,10 @@ myApp.service('articleService', function () {
   }       
 }*/
 
-myApp.controller("CategoryController", function ($scope, $http, articleService) {
+myApp.controller("CategoryController", function ($scope, articleService) {
 	console.log("CategoryController: ");
 	//Selected default value of dropdown
-	$http.get('./resources/data/articles.data.json').
+	/*$http.get('./resources/data/articles.data.json').
 	success(function (data) {
 		//$scope.categories = data.articles;
 		articleService.setArticles(data.articles);
@@ -34,7 +41,9 @@ myApp.controller("CategoryController", function ($scope, $http, articleService) 
 	}).
 	error(function (error) {
 		console.log("Error reading articles.json: " + error);
-	});
+	});*/
+	$scope.categories = fetchCategories(articleService.getArticles());
+		console.log($scope.categories);
 	$scope.onCategoryChange = function(item){
 		console.dir("item");
 		console.dir(item);
