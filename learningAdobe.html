@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-ng-app="myApp">
+<html lang="en" >
 
 
 <head>
@@ -13,7 +13,7 @@
 
 </head>
 
-<body>
+<body data-ng-app="myApp">
 	<div>
 		<div>
 			<div class="registerDiv bodyWidth">Are you a member? <a href="#">Register</a> or <a href="#">Login</a></div>
@@ -59,18 +59,17 @@
 		</nav>
 		<div class="mainDiv bodyWidth">
 			<section>
-				<div class="articlesDiv">
+				<div class="articlesDiv"  >
 					<div class="articlesHeader">
 						<h3>Category:<span><b>Articles</b></span></h3>
 					</div>
-					<div class="categoryHeader">
+					<div class="categoryHeader" data-ng-controller="CategoryController">
 						<div id="categorySelectionContainer" class="filter-container">
 							<h3 id="categorySelectionTitle" class="category-selection-title">
 								<span>Category</span>
 							</h3>
-<!--							ng-model="category-selected" ng-change="onCategoryChange(category-selected)"-->
-							<select id="categorySelector" data-ng-controller="CategoryController" style="width:255px"
-							>
+							<select id="categorySelector" style="width:255px"
+								ng-model="category" ng-change="onCategoryChange(category)">
 								<!--<option value="0" label="Select Category"></option>-->
 								<option data-ng-repeat="category in categories" value="{{::category}}">
 									{{::category}}
@@ -86,12 +85,12 @@
 						<div class="clearClass"></div>
 					</div>
 
-					<div class="contentsDiv" data-ng-controller="ArticleController">
+					<div class="contentsDiv" data-ng-controller="ArticleController" >
 						<div class="content" data-ng-repeat="article in articles" data-ng-show="article.display">
 							<img class="imgs" data-ng-src="{{::article.articleImageUrl}}" data-ng-alt="{{::article.articleImageAlt}}" />
 							<article class="article-desc">
 								<h4>{{::article.category}} <span>{{::article.date}}</span></h4>
-								<h3>{{::article.description}}</h3>
+								<h3>{{::article.title}}</h3>{{::article.description}}
 							</article>
 							<a class="article-click-link" href="{{::article.articleUrl}}" target="_blank"></a>
 						</div>

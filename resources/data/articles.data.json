@@ -28,28 +28,48 @@
 			"author":"Swapnika",
 			"date":"",
 			"description":"By default HTML elements fall in to two categories for the way they render/lay in a document: i.e, Block & Inline.",
-			"articleImageUrl":"resources/images/articleThumbnails/inspiration-368x246",
-			"articleUrl":"./ariticles/PositionArticle.html"
+			"articleImageUrl":"resources/images/articleThumbnails/BlockInlineElements.png",
+			"articleUrl":"./ariticles/BlockInlineElements.html"
 		},{
 			"display":true,
-			"title":"Block & Inline Elements",
-			"articleImageAlt":"Block & Inline Elements",
-			"category":"JS",
+			"title":"Float And Clear",
+			"articleImageAlt":"Float And Clear Elements",
+			"category":"CSS",
+			"author":"Swapnika",
+			"date":"",
+			"description":"To arrange block elements linearly that is horizontally one next to other the block  element, float property is made to set to 'left' or 'right'.",
+			"articleImageUrl":"resources/images/articleThumbnails/FloatAndClear.png",
+			"articleUrl":"./ariticles/FloatAndClear.html"
+		},{
+			"display":true,
+			"title":"Vertically align Child Elements",
+			"articleImageAlt":"Vertically Aligning Child Elements",
+			"category":"CSS",
 			"author":"Swapnika",
 			"date":"",
 			"description":"By default HTML elements fall in to two categories for the way they render/lay in a document: i.e, Block & Inline.",
-			"articleImageUrl":"resources/images/articleThumbnails/PositionProperty.png",
-			"articleUrl":"./ariticles/PositionArticle.html"
+			"articleImageUrl":"resources/images/articleThumbnails/VerticallyAlignChild.png",
+			"articleUrl":"./ariticles/VerticallyAlignChild.html"
 		},{
 			"display":true,
-			"title":"Block & Inline Elements",
-			"articleImageAlt":"Block & Inline Elements",
-			"category":"JS",
+			"title":"CSS Box Model",
+			"articleImageAlt":"CSS Box Model",
+			"category":"CSS",
 			"author":"Swapnika",
 			"date":"",
-			"description":"By default HTML elements fall in to two categories for the way they render/lay in a document: i.e, Block & Inline.",
-			"articleImageUrl":"resources/images/articleThumbnails/PositionProperty.png",
-			"articleUrl":"./ariticles/PositionArticle.html"
+			"description":"Box that wraps every element.",
+			"articleImageUrl":"resources/images/articleThumbnails/boxModel.png",
+			"articleUrl":"./ariticles/boxModel.html"
+		},{
+			"display":true,
+			"title":"CSS Selectors",
+			"articleImageAlt":"CSS Selectors",
+			"category":"CSS",
+			"author":"Swapnika",
+			"date":"",
+			"description":"CSS Selectors enable us to cherry pick each and every element/group of elements to style them.",
+			"articleImageUrl":"resources/images/articleThumbnails/selectors.png",
+			"articleUrl":"./ariticles/selectorsArticle.html"
 		}
     ]
 }

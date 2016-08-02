@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Box Model</title>
+	<style>
+		body div{
+			box-sizing: border-box;
+		}
+		.box-box div{
+			position: relative;
+			border: 3px solid;
+			text-align: center;
+			padding: 20px;
+		}
+		
+		.box-box {
+			width: 400px;
+			height: 400px;
+		}
+		
+		.margin-box {
+			width: 350px;
+			height: 350px;
+		}
+		
+		.border-box {
+			width: 300px;
+			height: 300px;
+		}
+		
+		.padding-box {
+			width: 250px;
+			height: 250px;
+		}
+		
+		.actual-content {
+			width: 200px;
+			height: 200px;
+		}
+		.testDiv{
+			width: 20px;
+			height: 20px;
+			border: 20px solid blue;
+			border-bottom-color: aqua;
+			border-top-color: blanchedalmond;
+			visibility: hidden;
+		}
+	</style>
+</head>
+
+<body style="word-wrap: normal; background-color: lightgrey; width:100%">
+	<div class="container-center-align">
+		<header>
+			<h3>CSS Box Model</h3>
+		</header>
+		<p>
+			In design and layout of HTML elements we can think of each HTML element as box. In CSS Box Model is a box that is wrapping an element completely, which is composed of: the actual content, four side padding, four side borders, and four side margins from inside out.
+		</p>
+
+		<div class="box-box">
+			<div class="margin-box">Margin
+				<div class="border-box">Border
+					<div class="padding-box">Padding 
+						<div class="actual-content">Actual Content</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="testDiv"></div>
+	</div>
+</body>
+
+</html>
