@@ -20,7 +20,7 @@ myApp.service('articleService', function ($http) {
 	};
 });
 
-myApp.controller("ArticleController", function ($rootScope, $scope, $http, articleService) {
+myApp.controller("ArticleController", function ($scope, $http, articleService) {
 
 	articleService.getArticlesAsync()
 		.then(function (response) {
@@ -30,7 +30,7 @@ myApp.controller("ArticleController", function ($rootScope, $scope, $http, artic
 		 $scope.articles = categorizeArticles(articles, "CSS");
 	 });*/
 	console.log("Inside  Article controller");
-	$rootScope.$on('sevent', function (event, categoryObj) {
+	$scope.$on('sevent', function (event, categoryObj) {
 		console.log(event + "category: " + categoryObj.category);
 		articleService.getArticlesAsync()
 			.then(function (response) {
@@ -56,13 +56,12 @@ myApp.controller("CategoryController", function ($rootScope, $scope, articleServ
 		});
 	$scope.onCategoryChange = function () {
 		console.log("onCategoryChange: " + this.category);
-		$rootScope.$emit('sevent', {
+		$rootScope.$broadcast('sevent', {
 			"category": this.category
 		});
 		console.log("After emit");
 	};
 });
-
 
 function categorizeArticles(array, category) {
 	var filteredList = [];

@@ -1,17 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" >
+
+
 <head>
-<title>Page Title</title>
-<link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<title>Articles</title>
+	<link type="text/css" rel="stylesheet" href="shackStyle.css">
+	<link rel="stylesheet" href="./resources/libs/font-awesome-4.6.3/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src="/js/articles/app.js"></script>
+	<!--<script rel="stylesheet" src="./resources/libs/angular.min.js"></script>-->
+
 </head>
-<body>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
-<a href="http://eloquentjavascript.net/">Eloquent JavaScript</a>
-<a href="https://www.doppnet.com/10-advanced-javascript-interview-questions.html">Interview Questions</a>
-<a href="https://www.toptal.com/javascript/interview-questions">Interview Questions</a>
-<a href="https://www.codementor.io/javascript/tutorial/21-essential-javascript-tech-interview-practice-questions-answers">Interview Questions</a>
+<body data-ng-app="myApp">
+	<div>
+		<div>
+			<div class="registerDiv bodyWidth">Are you a member? <a href="#">Register</a> or <a href="#">Login</a></div>
+		</div>
+		<header class="pageHeader">
+			<div class="header-box bodyWidth">
+				<div class="page-header-container">
+					<h1 class="pageHeader"><a href="#">Learning Abode</a></h1>
+				</div>
+				<div class="page-share-search">
+					<span>
+						<a href="#" class="fa fa-twitter" aria-hidden="true"></a>
+						<a href="#" class="fa fa-facebook" aria-hidden="true"></a>
+						<a href="#" class="fa fa-google-plus-official" aria-hidden="true"></a>
+						<a href="#" class="fa fa-rss" aria-hidden="true"></a>
+					</span>
+					<input type="text">
+				</div>
+			</div>
+		</header>
+		<nav>
+			<div class="mainNavBar">
+				<div class="mainNav bodyWidth">
+					<a>Articles</a>
+					<a>Inspiration</a>
+					<a>Gallery</a>
+					<a>About</a>
+				</div>
+			</div>
+			<div class="subNavBar">
+				<div class="subNav bodyWidth">
+					<a>HTML</a>
+					<a>Java Script</a>
+					<a>CSS</a>
+					<a>Layouts</a>
+					<a>UX Design</a>
+					<a>Graphics</a>
+					<a>Navigations</a>
+					<a>Freelancing</a>
+					<a>Typography</a>
+				</div>
+			</div>
+		</nav>
+		<div class="mainDiv bodyWidth">
+			<section>
+				<div class="articlesDiv">
+					<div class="articlesHeader">
+						<h3>Category:<span><b>Articles</b></span></h3>
+					</div>
+					<div class="categoryHeader" data-ng-controller="CategoryController">
+						<div id="categorySelectionContainer" class="filter-container">
+							<h3 id="categorySelectionTitle" class="category-selection-title">
+								<span>Category</span>
+							</h3>
+							<select id="categorySelector" style="width:255px"
+								ng-model="category" ng-change="onCategoryChange(category)">
+								<!--<option value="0" label="Select Category"></option>-->
+								<option data-ng-repeat="category in categories" value="{{::category}}">
+									{{::category}}
+								</option>
+							</select>
+						</div>
+						<div id="searchContainer" class="filter-container">
+							<h3 class="floatLeftClass">Search Aricles</h3>
+							<div class="floatLeftClass lineDiv"></div>
+							<div class="clearClass" style="width:340px"></div>
+							<input type="text" />
+						</div>
+						<div class="clearClass"></div>
+					</div>
 
+					<div class="contentsDiv" data-ng-controller="ArticleController" >
+						<div class="content" data-ng-repeat="article in articles" data-ng-show="article.display">
+							<img class="imgs" data-ng-src="{{::article.articleImageUrl}}" data-ng-alt="{{::article.articleImageAlt}}" />
+							<article class="article-desc">
+								<h4>{{::article.category}} <span>{{::article.date}}</span></h4>
+								<h3>{{::article.title}}</h3>{{::article.description}}
+							</article>
+							<a class="article-click-link" href="{{::article.articleUrl}}" target="_blank"></a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<aside class="mainAside">
+				<aside class="asideBx aside1"></aside>
+				<aside class="asideBx aside2"></aside>
+				<aside class="asideBx aside3"></aside>
+			</aside>
+			<div class="clearClass"></div>
+		</div>
+	</div>
+	<footer class="page-footer">
+		<div class="bodyWidth">
+			<span>Made with <i class="fa fa-heart" aria-hidden="true"></i></span>
+			<p>
+				<span class="share-search">Other places where we can meet 
+					<a href="#" class="fa fa-twitter" aria-hidden="true"></a>
+					<a href="#" class="fa fa-facebook" aria-hidden="true"></a>
+					<a href="#" class="fa fa-google-plus-official" aria-hidden="true"></a>
+					<a href="#" class="fa fa-rss" aria-hidden="true"></a>
+				</span>
+			</p>
+		</div>
+		<div class="patnerships-block">
+			<p>In patnership with Laaj.</p>
+		</div>
+	</footer>
 </body>
+
 </html>
