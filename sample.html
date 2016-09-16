@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+(function(){
+	
+	if(window.console && console.log){
+		var consolefn = console.log;
+		console.log = function(){
+			Array.prototype.unshift.call(arguments, "Prefix: ");
+			consolefn.apply(this, arguments);
+		}
+		
+	}
+	
+	})();
+window.console = console;
+console.log("aaaaa");
+console.log("aaaaa","bbbb");
+
+	</script>
+</body>
+</html>

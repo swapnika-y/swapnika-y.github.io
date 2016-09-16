@@ -89,7 +89,7 @@
 						<div class="content" data-ng-repeat="article in articles" data-ng-show="article.display">
 							<img class="imgs" data-ng-src="{{::article.articleImageUrl}}" data-ng-alt="{{::article.articleImageAlt}}" />
 							<article class="article-desc">
-								<h4>{{::article.category}} <span>{{::article.date}}</span></h4>
+								<h4>{{::article.category.toString()}} <span>{{::article.date}}</span></h4>
 								<h3>{{::article.title}}</h3>{{::article.description}}
 							</article>
 							<a class="article-click-link" href="{{::article.articleUrl}}" target="_blank"></a>

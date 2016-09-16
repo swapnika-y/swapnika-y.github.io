@@ -25,11 +25,12 @@ myApp.controller("ArticleController", function ($scope, $http, articleService) {
 	articleService.getArticlesAsync()
 		.then(function (response) {
 			$scope.articles = categorizeArticles(response.data.articles, "CSS");
+			$scope.articleCategory = String.toString(scope.articles.category);//{{::article.category}}
 		});
 	/*articleService.getArticles(function(articles){
 		 $scope.articles = categorizeArticles(articles, "CSS");
-	 });*/
-	console.log("Inside  Article controller");
+	 });
+	console.log("Inside  Article controller");*/
 	$scope.$on('sevent', function (event, categoryObj) {
 		console.log(event + "category: " + categoryObj.category);
 		articleService.getArticlesAsync()
@@ -67,7 +68,7 @@ function categorizeArticles(array, category) {
 	var filteredList = [];
 	if (array.length > 0) {
 		filteredList = array.filter(function (item, idx, array) {
-			if (item.category === category) {
+			if (item.category.includes(category)) {
 				return true;
 			}
 			return false;
@@ -83,10 +84,13 @@ function fetchCategories(array) {
 	var resultCategoryList = [];
 	var i = 0,
 		l = array.length;
-	console.dir("fetchCategories" + array);
 	for (i = 0; i < l; i++) {
-		if (resultCategoryList.indexOf(array[i].category) == -1) {
-			resultCategoryList.push(array[i].category);
+		var j = 0;
+		var catLen = array[i].category.length;
+		for (j = 0; j<catLen; j++) {
+			if (resultCategoryList.indexOf(array[i].category[j]) == -1) {
+				resultCategoryList.push(array[i].category[j]);
+			}
 		}
 	}
 	return resultCategoryList;

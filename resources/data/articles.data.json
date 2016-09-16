@@ -24,7 +24,7 @@
 			"display":true,
 			"title":"Block & Inline Elements",
 			"articleImageAlt":"Block & Inline Elements",
-			"category":"HTML",
+			"category":["HTML"],
 			"author":"Swapnika",
 			"date":"",
 			"description":"By default HTML elements fall in to two categories for the way they render/lay in a document: i.e, Block & Inline.",
